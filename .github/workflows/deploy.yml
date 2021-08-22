@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - run: nx run frontend:export
+    - run: npx nx run frontend:export
     - run: touch ./dist/apps/frontend/exported/.nojekyll
 
     - name: Deploy 🚀
