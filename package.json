@@ -2,6 +2,7 @@
   "name": "nx-pokemon-app",
   "version": "0.0.0",
   "license": "MIT",
+  "homepage": "https://deepkush97.github.io/nx-pokemon-app/",
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
@@ -23,7 +24,8 @@
     "update": "nx migrate latest",
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "deploy": "npx gh-pages -d dist/apps/frontend/exported"
   },
   "private": true,
   "dependencies": {

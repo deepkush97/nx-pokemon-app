@@ -36,7 +36,7 @@ const Index = ({ pokemons: data }) => {
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5  gap-4 h-80v md:h-70v overflow-auto px-4 py-2">
         {showableItems.map((v) => (
           <li key={v.id}>
-            <Link href={`/${v.id}`}>
+            <Link href={`/pokemon/${v.id}`}>
               <a>
                 <div className="p-6 bg-white w-full  flex flex-col items-center rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transition transform duration-500 cursor-pointer">
                   <div className="text-6xl font-serif">{v.name.english[0]}</div>
