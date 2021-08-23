@@ -5,7 +5,14 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href={process.env.NEXT_PUBLIC_BACKEND_URL} />
+          <link
+            rel="icon"
+            href={`${
+              process.env.NEXT_PUBLIC_NODE_ENV === 'production' ?? ''
+                ? ''
+                : process.env.NEXT_PUBLIC_BASE_PATH
+            }/favicon.ico`}
+          />
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"

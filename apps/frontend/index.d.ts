@@ -9,6 +9,7 @@ declare namespace NodeJS {
   interface ProcessEnv {
     NEXT_PUBLIC_BACKEND_URL: string;
     NEXT_PUBLIC_BASE_PATH: string;
+    NEXT_PUBLIC_NODE_ENV: string;
     BACKEND_URL: string;
   }
 }
